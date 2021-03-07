@@ -1,5 +1,23 @@
-import { helloRoute } from "./helloRoute";
+import { acceptRequestRoute } from './acceptRequestRoute.js';
+import { createGroupRoute } from './createGroupRoute.js';
+import { createRequestRoute } from './createRequestRoute.js';
+import { createMessageRoute } from './createMessageRoute.js';
+import { getAllGroupsRoute } from './getAllGroupsRoute.js';
+import { getGroupRoute } from './getGroupRoute.js';
+import { getGroupMessagesRoute } from './getGroupMessagesRoute.js';
+import { getJoinGroupRequestsRoute } from './getJoinGroupRequestsRoute.js';
+import { getUserGroupsRoute } from './getUserGroupsRoute.js';
+import { rejectRequestRoute } from './rejectRequestRoute.js';
 
 export const routes = [
-  helloRoute,
+    acceptRequestRoute,
+    createGroupRoute,
+    createRequestRoute,
+    createMessageRoute,
+    getAllGroupsRoute,
+    getGroupRoute,
+    getGroupMessagesRoute,
+    getJoinGroupRequestsRoute,
+    getUserGroupsRoute,
+    rejectRequestRoute,
 ];
