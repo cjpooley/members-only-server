@@ -1,7 +1,15 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import admin from 'firebase-admin';
 import { db } from './db/index.js';
 import { routes } from './routes/index.js';
+import fs from 'fs'; 
+
+let credentials = JSON.parse(fs.readFileSync('src/credentials.json', 'utf-8'));
+
+admin.initializeApp({
+  credential: admin.credential.cert(credentials)
+});
 
 const app = express();
 
